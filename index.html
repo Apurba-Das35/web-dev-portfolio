@@ -1,70 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web developr poftfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/portfolio.css">
-</head>
-<body class="open-sans-normal">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/portfolio.css" />
+  </head>
+  <body class="open-sans-normal">
     <header class="header secondary-bg">
-        <nav>
-            <h3 class="nav-title">Mas<span class="text-primary">r</span>y</h3>
-            <ul>
-                <li><a class="dark-2" href="">Portfolio</a></li>
-                <li><a class="dark-2" href="">Blog</a></li>
-                <li><a class="dark-2" href=""><button class="btn-primary">Hire Me</button></a></li>
-
-            </ul>
-        </nav>
-        <div class="banner">
-            <div class="banner-content">
-                <h4 class="banner-greetings dark-2">Hi, I am</h4>
-                <h1 class="banner-title">Mary Hardy</h1>
-                <p class="banner-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, porro temporibus perferendis suscipit blanditiis molestiae non a voluptates?
-                </p>
-                <button class="btn-primary">Download CV</button>
-                <button class="btn-primary">Contack</button>
-
-            </div>
-            <img class="banner-profile-pic" src="images/hardy.png" alt="">
+      <nav>
+        <h3 class="nav-title">Mas<span class="text-primary">r</span>y</h3>
+        <ul>
+          <li><a class="dark-2" href="">Portfolio</a></li>
+          <li><a class="dark-2" href="">Blog</a></li>
+          <li>
+            <a class="dark-2" href=""
+              ><button class="btn-primary">Hire Me</button></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <div class="banner-content">
+          <h4 class="banner-greetings dark-2">Hi, I am</h4>
+          <h1 class="banner-title">Mary Hardy</h1>
+          <p class="banner-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, porro temporibus perferendis suscipit blanditiis
+            molestiae non a voluptates?
+          </p>
+          <button class="btn-primary">Download CV</button>
+          <button class="btn-primary">Contack</button>
         </div>
+        <img class="banner-profile-pic" src="images/hardy.png" alt="" />
+      </div>
     </header>
 
     <main>
-        <section class="about secondary-bg">
-            <h3 class="section-title">About Me</h3>
-            <p class="section-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum inventore mollitia sit totam sequi excepturi ipsum expedita a, animi quod corrupti fuga ipsam aperiam recusandae possimus eum. Reprehenderit, a exercitationem.
+      <section class="about secondary-bg">
+        <h3 class="section-title">About Me</h3>
+        <p class="section-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+          inventore mollitia sit totam sequi excepturi ipsum expedita a, animi
+          quod corrupti fuga ipsam aperiam recusandae possimus eum.
+          Reprehenderit, a exercitationem.
+        </p>
+        <!-- .about-item*4>p.item-title+p.item-description -->
+        <div class="about-items">
+          <div class="about-item">
+            <p class="item-title">name</p>
+            <p class="item-description">Mary Hardy</p>
+          </div>
+          <div class="about-item">
+            <p class="item-title">Email</p>
+            <p class="item-description">abc@def.com</p>
+          </div>
+          <div class="about-item">
+            <p class="item-title">Date of Birth</p>
+            <p class="item-description">Dec 16, 1971</p>
+          </div>
+          <div class="about-item">
+            <p class="item-title">From</p>
+            <p class="item-description">Dhaka, BD</p>
+          </div>
+        </div>
+      </section>
+      <!-- what i do section start -->
+      <section class="skills">
+        <h3 class="section-title text-center">What I do</h3>
+        <p class="section-description text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem amet
+          suscipit vitae distinctio, vero porro repellat perferendis numquam
+          ullam dolorem rem perspiciatis illum quibusdam soluta. Quas esse id
+          necessitatibus similique.
+        </p>
+        <!-- .skil*4>img+skill-title+p.skill-description -->
+        <div class="skills-container">
+          <div class="skill">
+            <img src="images/icons/js.png" alt="" />
+            <skill-title>Vanilla JavaScript</skill-title>
+            <p class="skill-description">
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
             </p>
-            <!-- .about-item*4>p.item-title+p.item-description -->
-            <div class="about-items">
-                <div class="about-item">
-                    <p class="item-title">name</p>
-                    <p class="item-description">Mary Hardy</p>
-                </div>
-                <div class="about-item">
-                    <p class="item-title">Email</p>
-                    <p class="item-description">abc@def.com</p>
-                </div>
-                <div class="about-item">
-                    <p class="item-title">Date of Birth</p>
-                    <p class="item-description">Dec 16, 1971</p>
-                </div>
-                <div class="about-item">
-                    <p class="item-title">From</p>
-                    <p class="item-description">Dhaka, BD</p>
-                </div>
-            </div>
-        </section>
+          </div>
+          <div class="skill">
+            <img src="images/icons/react.png" alt="" />
+            <skill-title>React</skill-title>
+            <p class="skill-description">
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
+            </p>
+          </div>
+          <div class="skill">
+            <img src="images/icons/nodejs.png" alt="" />
+            <skill-title>Node.js</skill-title>
+            <p class="skill-description">
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
+            </p>
+          </div>
+          <div class="skill">
+            <img src="images/icons/mongo.png" alt="" />
+            <skill-title>MongoDB</skill-title>
+            <p class="skill-description">
+              List skill/technologies here. You can change the icon above to any
+              of the 1500+ FontAwesome 5 free icons available. Aenean commodo
+              ligula eget dolor.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
